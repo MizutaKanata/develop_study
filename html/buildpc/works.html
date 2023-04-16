@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HomemadePC-研修web site-</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ここにサイト説明を入れます">
+  <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/openclose.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<style>
+.menu1 a {background-position: -10px -10px;}
+.menu2 a {background-position: -10px -130px;}
+.menu3 a {background-position: -10px -250px;}
+.menu4 a {background-position: -10px -370px;}
+.menu5 a {background-position: -10px -490px;}
+</style>
+<![endif]-->
+</head>
+<body class="works">
+  <div id="container">
+    <!--PC用（801px以上端末）で表示させるブロック-->
+    <header class="pc">
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>
+      <!--PC用（801px以上端末）メニュー-->
+      <nav id="menubar">
+        <ul>
+          <li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+          <li class="menuimg menu2"><a href="about.html"><span>About</span></a></li>
+          <li class="menuimg menu3 current"><a href="works.html"><span>Works</span></a></li>
+          <li class="menuimg menu4"><a href="link.html"><span>How to</span></a></li>
+          <li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+      <ul class="icon">
+        <li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+      </ul>
+    </header>
+    <!--/.pc-->
+    <!--小さな端末用（800px以下端末）で表示させるブロック-->
+    <header class="sh">
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>
+      <!--小さな端末用（800px以下端末）メニュー-->
+      <div id="menubar-s">
+        <nav>
+          <ul>
+            <li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+            <li class="menuimg menu2"><a href="about.html"><span>About</span></a></li>
+            <li class="menuimg menu3 current"><a href="works.html"><span>Works</span></a></li>
+            <li class="menuimg menu4"><a href="link.html"><span>How to</span></a></li>
+            <li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+        <ul class="icon">
+          <li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+        </ul>
+      </div>
+      <!--/#menubar-s-->
+    </header>
+    <!--/.sh-->
+    <div id="contents">
+      <div id="main">
+        <section id="pagetop">
+          <h2 class="title">PC Gallery<span>PCギャラリー</span></h2>
+          <h2>My Build PC</h2>
+          <p>私がこれまでに自作したPCは以下の通りです。<br> 今後は通常のPC以外にも、個人的にサーバーPCの構築にも挑戦してみたいと考えています。 </p>
+          <div class="list">
+            <section id="new">
+              <a href="mypc_2gen.html">
+                <figure><img src="images/MyBuild/My2gen/mypc_2gen1.jpg" alt=""></figure>
+                <h4>My PC(2Gen)-2022/05～<span class="newicon">NEW</span></h4>
+              </a>
+            </section>
+          </div>
+          <div class="list">
+            <a href="mypc_2gen.html">
+              <figure><img src="images/sample2.jpg" alt=""></figure>
+              <h4>Friend Request-2021/04～</h4>
+            </a>
+          </div>
+          <div class="list">
+            <a href="mypc_2gen.html">
+              <figure><img src="images/sample3.jpg" alt=""></figure>
+              <h4>My PC(1Gen)-2020/03～</h4>
+            </a>
+          </div>
+          <div class="list"> <a href="mypc_2gen.html"></a>
+            <figure><img src="images/sample1.jpg" alt=""></figure>
+            <h4>Family Use PC-2018/12～</h4>
+          </div>
+        </section>
+        <section>
+          <h2>Everyone's PC</h2>
+          <h4>いろんな人の自作PCをギャラリーにしてみました。<br> 画像をクリックするとそれぞれのTwitterに飛びます。</h4>
+          <h4>投稿は<strong class="color1"><a href="./post.html">こちら</a></strong></h4><br>
+          <div class="list2">
+            <a href="https://twitter.com/skyreno11/status/1645029907905536006?s=20">
+              <figure><img src="images/post/user01/user01PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>レノさん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/rbnx18/status/1643268467494367233?s=20">
+              <figure><img src="images/post/user02/user02PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>Ftn@看護学生さん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/ZOTAC_JAPAN/status/1645645348910800898?s=20">
+              <figure><img src="images/post/user03/user03PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>ZOTAC日本さん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/angelicpower001/status/1645027221969711104?s=20">
+              <figure><img src="images/post/user04/user04PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>天使の力さん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/bc57661647/status/1642733905697730560?s=20">
+              <figure><img src="images/post/user05/user05PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>たまさん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/510gamercom/status/1643778466578583552?s=20">
+              <figure><img src="images/post/user06/user06PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>アルティメット後藤さん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/meow_pcbuildJP/status/1643250776251457536?s=20">
+              <figure><img src="images/post/user07/user07PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>がうるさん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/yamatoshi_PC/status/1643551560323178496?s=20">
+              <figure><img src="images/post/user08/user08PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>やまとしさん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/oxio0940/status/1644850703956082688?s=20">
+              <figure><img src="images/post/user09/user09PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>oxio0940さん</h4>
+          </div>
+          <div class="list2">
+            <a href="https://twitter.com/yatsu_yuan/status/1638508578805018626?s=20">
+              <figure><img src="images/post/user10/user10PC_1.jpg" alt=""></figure>
+            </a>
+            <h4>やつさん</h4>
+          </div>
+        </section>
+        <footer> <small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span> </footer>
+      </div>
+      <!--/#main-->
+    </div>
+    <!--/#contents-->
+  </div>
+  <!--/#container-->
+  <!--ページの上部に戻る「↑」ボタン-->
+  <p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
+  <!--メニュー開閉ボタン-->
+  <div id="menubar_hdr" class="close"></div>
+  <!--メニューの開閉処理条件設定　800px以下-->
+  <script>
+    if (OCwindowWidth() <= 800) {
+    	open_close("menubar_hdr", "menubar-s");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HomemadePC-研修web site-</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ここにサイト説明を入れます">
+  <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/openclose.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+    		var tableElem = document.getElementById('tai1');
+    		var rowElems = tableElem.rows;
+    		var price = 0;
+    		for (i = 1, len = rowElems.length - 1; i < len; i++) {
+    			rowElems[i].cells[3].innerText = parseInt(rowElems[i].cells[1].innerText * rowElems[i].cells[2].innerText);
+    			price += parseInt(rowElems[i].cells[3].innerText);
+    		}
+    		document.getElementById('total').innerText = price;
+    	}
+  </script>
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<style>
+.menu1 a {background-position: -10px -10px;}
+.menu2 a {background-position: -10px -130px;}
+.menu3 a {background-position: -10px -250px;}
+.menu4 a {background-position: -10px -370px;}
+.menu5 a {background-position: -10px -490px;}
+</style>
+<![endif]-->
+</head>
+<body class="Works">
+  <div id="container">
+    <!--PC用（801px以上端末）で表示させるブロック-->
+    <header class="pc">
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>
+      <!--PC用（801px以上端末）メニュー-->
+      <nav id="menubar">
+        <ul>
+          <li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+          <li class="menuimg menu2"><a href="about.html"><span>About</span></a></li>
+          <li class="menuimg menu3 current"><a href="Works.html"><span>Works</span></a></li>
+          <li class="menuimg menu4"><a href="link.html"><span>How to</span></a></li>
+          <li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+      <ul class="icon">
+        <li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+      </ul>
+    </header>
+    <!--/.pc-->
+    <!--小さな端末用（800px以下端末）で表示させるブロック-->
+    <header class="sh">
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>
+      <!--小さな端末用（800px以下端末）メニュー-->
+      <div id="menubar-s">
+        <nav>
+          <ul>
+            <li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+            <li class="menuimg menu2"><a href="about.html"><span>About</span></a></li>
+            <li class="menuimg menu3 current"><a href="Works.html"><span>Works</span></a></li>
+            <li class="menuimg menu4"><a href="link.html"><span>How to</span></a></li>
+            <li class="menuimg menu5"><a href="contact.html"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+        <ul class="icon">
+          <li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+        </ul>
+      </div>
+      <!--/#menubar-s-->
+    </header>
+    <!--/.sh-->
+    <div id="contents">
+      <div id="main">
+        <article id="pagetop">
+          <h2 class="title">Works<span>SPEC</span></h2>
+          <table class="ta1">
+            <caption>My PC（私が現在メインで使用しているPCです ）</caption>
+            <tr>
+              <th><strong class="color1"><b>name</b></strong></b>
+              </th>
+              <td><strong class="color1">Used Parts</strong></td>
+              <td><strong class="color1">Price</strong></td>
+            </tr>
+            <tr>
+              <th>CPU</th>
+              <td><a href="https://www.intel.co.jp/content/www/jp/ja/products/sku/134599/intel-core-i912900k-processor-30m-cache-up-to-5-20-ghz/specifications.html">Intel : Corei9-12900K</a></td>
+              <td>￥71,980</td>
+            </tr>
+            <tr>
+              <th>マザーボード</th>
+              <td><a href="https://rog.asus.com/jp/motherboards/rog-strix/rog-strix-z690-a-gaming-wifi-d4-model/">ASUS：ROG STRIX Z690-A GAMING WIFI D4</a></td>
+              <td>￥45,980</td>
+            </tr>
+            <tr>
+              <th>GPU</th>
+              <td><a href="https://rog.asus.com/jp/graphics-cards/graphics-cards/rog-strix/rog-strix-rtx3090-o24g-white-model/">ASUS：ROG-STRIX-RTX3090-O24G-WHITE</a></td>
+              <td>￥198,000</td>
+            </tr>
+            <tr>
+              <th>CPUクーラー</th>
+              <td><a href="https://nzxt.com/collection/kraken-z">NZXT：Kraken Z63 RGB</a></td>
+              <td>￥33,000</td>
+            </tr>
+            <tr>
+              <th>メモリ</th>
+              <td><a href="https://www.corsair.com/ja/ja/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC/%E8%A3%BD%E5%93%81/CORSAIR-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88-PC-%E3%83%93%E3%83%AB%E3%83%89/Vengeance-RGB-PRO-SL-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/p/CMH32GX4M2D3600C18W">Corsair：VENGEANCE RGB PRO SL 32GB</a></td>
+              <td>￥13,000</td>
+            </tr>
+            <tr>
+              <th>SSD</th>
+              <td><a href="https://www.crucial.jp/ssd/p3/ct4000p3ssd8?gclid=CjwKCAjw586hBhBrEiwAQYEnHRiEnDJVb3oH_00CJw8cYFk_AAOzwmUTYaSyRq5Y5Qxcr1Pp6VoyLRoCEu0QAvD_BwE&ef_id=CjwKCAjw586hBhBrEiwAQYEnHRiEnDJVb3oH_00CJw8cYFk_AAOzwmUTYaSyRq5Y5Qxcr1Pp6VoyLRoCEu0QAvD_BwE:G:s&gclsrc=aw.ds">Crucial：P3 4TB PCIe M.2 2280 SSD</a></td>
+              <td>￥30,000</td>
+            </tr>
+            <tr>
+              <th>電源ユニット</th>
+              <td><a href="https://rog.asus.com/jp/power-supply-units/rog-thor/rog-thor-1200p2-gaming-model/">ASUS：ROG-THOR-1200P2-GAMING</a></td>
+              <td>￥30,000</td>
+            </tr>
+            <tr>
+              <th>PCケース</th>
+              <td><a href="https://nzxt.com/product/h510-elite">NZXT：H510 Elite</a></td>
+              <td>￥12,000</td>
+            </tr>
+            <tr>
+              <th>OS</th>
+              <td><a href="https://www.microsoft.com/ja-jp/d/windows-11-pro/dg7gmgf0d8h4">Microsoft：Windows11 Pro</a></td>
+              <td>￥28,000</td>
+            </tr>
+            <tr>
+              <th>総額</th>
+              <td id="total" colspan="2">￥461,960</td>
+            </tr>
+          </table>
+          <h3>Gallery</h3>
+          <div class="list">
+            <figure><img src="images/MyBuild/My2gen/mypc_2gen1.jpg" alt=""></figure>
+            </a>
+          </div>
+          <div class="list">
+            <figure><img src="images/MyBuild/My2gen/mypc_2gen2.jpg" alt=""></figure>
+          </div>
+          <div class="list">
+            <figure><img src="images/MyBuild/My2gen/mypc_2gen3.jpg" alt=""></figure>
+          </div>
+		  <div class="list">
+            <figure><img src="images/MyBuild/My2gen></figure>
+          </div>
+        </article>
+        <p><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+        <footer> <small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span> </footer>
+      </div>
+      <!--/#main-->
+    </div>
+    <!--/#contents-->
+  </div>
+  <!--/#container-->
+  <!--ページの上部に戻る「↑」ボタン-->
+  <p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
+  <!--メニュー開閉ボタン-->
+  <div id="menubar_hdr" class="close"></div>
+  <!--メニューの開閉処理条件設定　800px以下-->
+  <script>
+    if (OCwindowWidth() <= 800) {
+    	open_close("menubar_hdr", "menubar-s");
+    }
+  </script>
+</body>
+</html>
